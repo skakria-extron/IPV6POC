@@ -302,7 +302,10 @@ namespace IPV6POC
                                     try
                                     {
                                         int num = Int32.Parse(p[1]);
-                                        valid = true;
+                                        if (num >= 0)
+                                        {
+                                            valid = true;
+                                        }
                                         break;
                                     }
                                     catch (Exception ex)
